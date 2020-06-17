@@ -1,0 +1,30 @@
+/* * * { */
+    /* outline: dotted; */
+/* } * */
+
+body {
+    background-color: rgb(89, 115,250);
+    font-family: fantasy;
+    font-size: 50px;
+    
+    
+}
+h1 {
+    background-color: rgb(233, 12, 12);
+    padding: 100px;
+    float: left;
+}
+
+nav ul {
+    background-color: rgb(200, 150, 0);
+    padding: 50px;
+}
+
+main {
+    background-color: rgb(433, 50, 40);
+    padding: 50px;
+}
+li {
+    padding: 2px;
+}
+
