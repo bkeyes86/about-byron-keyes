@@ -15,7 +15,7 @@ function startGuessing() {
   //   askFour();
   //   askFive();
   askSix();
-  askSeven();
+//   askSeven();
 }
 
 // function askOne() {
@@ -110,47 +110,50 @@ function startGuessing() {
 //     alert('last one and you still need help lol!');
 //   }
 // }
+
 function askSix() {
+    for(var i = 0; i < 4; i++) {
+        var questionSix = prompt('What is my birth month from 1-12?');
+        var answer = Number(questionSix);
 
-  var question = prompt('what is my birth month by number 1 - 12?');
-
-  var answer = Number(question);
-  var month = 10;
-  var rounds = 4;
-
-  if (answer > month) {
-   alert('nope lower ');
-   askSix();
-  } else if(answer < month) {
-      alert('nope higher');
-      askSix();
-  } else if (answer === month) {
-      alert('octobers very own');
-  } else {
-      alert('answer needs a number');
-      askSix();
-  }
-
-  // eslint-disable-next-line no-undef
-  // eslint-disable-next-line for-direction
-  for(var i = 0; i > question; i++) {
-      alert('that is four try again it is 10!');
-      console.log('loop');
-  }
-//   var el = document.getElementById('correct');
-//   el.innerHTML = msg;
-
+        if(answer < 10) {
+            alert('Too low, guess higher.');
+        } else if(answer > 10) {
+            alert('Too high, guess lower.');
+        } else if(answer === 10) {
+            alert('October\'s very own!');
+            break;
+        } else {
+            alert('Numbers only please.');
+        }
+    }
 }
 
-function askSeven() {
-    var q2 = prompt('what are my favorite foods?');
+var guesses = 0;
+var foods = ['tacos', 'pizza', 'burgers', 'ice cream', 'steak'];
 
-    var [favoriteFoods];
-    foods = ['tacos', 'pizza', 'burgers', 'beets'];
+while(guesses < 7) {
+    var foodQ = prompt('What are my favorite foods?');
+    var answer = foodQ.toLowerCase().trim();
+    var correct = false;
 
-    foods.length;
-
+    for(var i = 0; i < foods.length; i++) {
+        if(answer === foods[i]) {
+            alert('That\'s right, ' + foods[i] + ' are fantastic!');
+            correct = true;
+            break;
+        } else {
+            console.log('incorrect answer');
+        }
+    }
+    if(correct === false) {
+        alert('That\'s not right, I don\'t think I like that food.');
+    }
+    guesses += 1;
 }
+
+alert('My favorite foods are tacos, pizza, burgers, ice cream, and steak.');
+
 
 
 // As a user, I would like to view a series of data related to the site owners interest so that the I can quickly view more information about them.
