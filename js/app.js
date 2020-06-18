@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 'use strict';
 
 console.log('This file is connected.');
@@ -5,109 +6,176 @@ startGuessing();
 
 function startGuessing() {
 
-  var yourName = prompt('What is your name?');
-  console.log(yourName);
-  alert(yourName + ' How are you Buddy? ');
-  askOne();
-  askTwo();
-  askThree();
-  askFour();
-  askFive();
-
+  //   var yourName = prompt('What is your name?');
+  //   console.log(yourName);
+  //   alert(yourName + ' How are you Buddy? ');
+  //   askOne();
+  //   askTwo();
+  //   askThree();
+  //   askFour();
+  //   askFive();
+  askSix();
+  askSeven();
 }
 
-function askOne() {
-  var guessOne = prompt('Do I have two brothers?');
+// function askOne() {
+//   var guessOne = prompt('Do I have two brothers?');
 
-  var correctOne = guessOne.toLowerCase().trim();
+//   var correctOne = guessOne.toLowerCase().trim();
 
-//   console.log(correctOne);
+//   //   console.log(correctOne);
 
-  if (correctOne === 'yes' || correctOne === 'y') {
-    alert('you got it dude!');
-  } else if(correctOne === 'no' || correctOne === 'n') {
-    alert('Nah');
-    alert('try again');
-    askOne();
+//   if (correctOne === 'yes' || correctOne === 'y') {
+//     alert('you got it dude!');
+//   } else if(correctOne === 'no' || correctOne === 'n') {
+//     alert('Nah');
+//     alert('try again');
+//     askOne();
+//   } else {
+//     alert('only yes no y or n please and thank you!');
+//     askOne();
+//   }
+
+// }
+
+// function askTwo() {
+//   var guessTwo = prompt('Did I live in Alabama?');
+
+//   var correctTwo = guessTwo.toLocaleLowerCase().trim();
+
+//   //   console.log(correctTwo);
+
+//   if (correctTwo ==='yes' || correctTwo ==='y') {
+//     alert('no way but it was in the south Florida!');
+//     askTwo();
+//   } else if(correctTwo === 'no' || correctTwo === 'n') {
+//     alert('it feels like you know me already!');
+//   } else {
+//     alert('still the same as the first question y , n , yes , no only!');
+//     askTwo();
+//   }
+
+// }
+
+// function askThree() {
+//   var guessThree = prompt('The warriors are my favorite team?');
+
+//   var correctThree = guessThree.toLowerCase().trim();
+
+//   //   console.log(correctThree);
+
+//   if (correctThree === 'yes' || correctThree ==='y') {
+//     alert('of course not c\'mon');
+//     askThree();
+//   } else if(correctThree === 'no' || correctThree === 'n') {
+//     alert('steph who?');
+//   } else {
+//     alert('things have not changed');
+//     askThree();
+//   }
+
+// }
+
+// function askFour() {
+//   var guessFour = prompt('I have 5 children');
+
+//   var correctFour = guessFour.toLowerCase().trim();
+
+//   //   console.log(correctFour);
+
+//   if (correctFour === 'yes' || correctFour === 'y') {
+//     alert('only two little angels lol');
+//     askFour();
+//   } else if(correctFour === 'no' || correctFour === 'n') {
+//     alert('Big Facts!');
+//   } else {
+//     alert('another reminder of y n yes or no is strange!');
+//     askFour();
+//   }
+// }
+
+// function askFive() {
+//   var guessFive = prompt('I have met Snoop Dogg Twice!');
+
+//   var correctFive = guessFive.toLowerCase().trim();
+
+//   //   console.log(correctFive);
+
+//   if (correctFive === 'no' || correctFive === 'n') {
+//     alert('he is taller in person trust me!');
+//     askFive();
+//   } else if(correctFive === 'yes' || correctFive === 'y') {
+//     alert('fan forever!');
+//   } else {
+//     alert('last one and you still need help lol!');
+//   }
+// }
+function askSix() {
+
+  var question = prompt('what is my birth month by number 1 - 12?');
+
+  var answer = Number(question);
+  var month = 10;
+  var rounds = 4;
+
+  if (answer > month) {
+   alert('nope lower ');
+   askSix();
+  } else if(answer < month) {
+      alert('nope higher');
+      askSix();
+  } else if (answer === month) {
+      alert('octobers very own');
   } else {
-    alert('only yes no y or n please and thank you!');
-    askOne();
+      alert('answer needs a number');
+      askSix();
   }
 
-}
-
-function askTwo() {
-  var guessTwo = prompt('Did I live in Alabama?');
-
-  var correctTwo = guessTwo.toLocaleLowerCase().trim();
-
-//   console.log(correctTwo);
-
-  if (correctTwo ==='yes' || correctTwo ==='y') {
-    alert('no way but it was in the south Florida!');
-    askTwo();
-  } else if(correctTwo === 'no' || correctTwo === 'n') {
-    alert('it feels like you know me already!');
-  } else {
-    alert('still the same as the first question y , n , yes , no only!');
-    askTwo();
+  // eslint-disable-next-line no-undef
+  // eslint-disable-next-line for-direction
+  for(var i = 0; i > question; i++) {
+      alert('that is four try again it is 10!');
+      console.log('loop');
   }
+//   var el = document.getElementById('correct');
+//   el.innerHTML = msg;
 
 }
 
-function askThree() {
-  var guessThree = prompt('The warriors are my favorite team?');
-  
-  var correctThree = guessThree.toLowerCase().trim();
+function askSeven() {
+    var q2 = prompt('what are my favorite foods?');
 
-//   console.log(correctThree);
+    var [favoriteFoods];
+    foods = ['tacos', 'pizza', 'burgers', 'beets'];
 
-  if (correctThree === 'yes' || correctThree ==='y') {
-    alert('of course not c\'mon');
-    askThree();
-  } else if(correctThree === 'no' || correctThree === 'n') {
-    alert('steph who?');
-  } else {
-    alert('things have not changed');
-    askThree();
-  }
+    foods.length;
 
 }
 
-function askFour() {
-  var guessFour = prompt('I have 5 children');
 
-  var correctFour = guessFour.toLowerCase().trim();
+// As a user, I would like to view a series of data related to the site owners interest so that the I can quickly view more information about them.
+// Create a “Top Ten” at the bottom of your HTML page as an ordered list in HTML. Some ideas that you can include could be top ten movies, top ten favorite places, or top ten places to visit. You may choose to do whatever top ten list that you wish.
+// Convert your work experience and education summary into an unordered list using HTML
 
-//   console.log(correctFour);
+// As a user, I would like to be guided to an answer through a series of feedback responses so that I can learn more about the site owner.
+// Add a 6th question to the guessing game that takes in a numeric input by prompting the user to guess a number.
+// Indicates through an alert if the guess is “too high” or “too low”.
+// It should give the user exactly four opportunities to get the correct answer.
+// After all attempts have been exhausted, tell the user the correct answer. Consider using a loop of some sort.
 
-  if (correctFour === 'yes' || correctFour === 'y') {
-    alert('only two little angels lol');
-    askFour()    
-  } else if(correctFour === 'no' || correctFour === 'n') {
-    alert('Big Facts!');
-  } else {
-    alert('another reminder of y n yes or no is strange!');
-    askFour()
-  }
-}
+// As a user, I would like to guess the answer to a question that could have many possibilities so that I can have fun with with a guessing game.
+// Add a 7th question that has multiple possible correct answers that are stored in an array.
+// Give the user 6 attempts to guess the correct answer.
+// The guesses will end once the user guesses a correct answer or they run out of attempts.
+// Display all the possible correct answers to the user.
+// Consider using a loop of some sort for this question.
 
-function askFive() {
-  var guessFive = prompt('I have met Snoop Dogg Twice!');
+// As a user, I would like to know my final score so that I can know how well I did.
+// Keep track of the total number of correct answers. At the end tell them how many they got correct out of the 7 questions asked.
+// In addition to the user stories stated above, continue to use console.logs throughout the code to track the questions that are being asked to the user, and add addtional CSS to style your HTML page.
 
-  var correctFive = guessFive.toLowerCase().trim();
+// Stay within scope of what was taught so far in class. Do not write functions within your application. Avoid the use of “helper” methods such as .includes() and .join(). Work with the instructional staff directly if you have questions about this requirement.
 
-//   console.log(correctFive);
-
-  if (correctFive === 'no' || correctFive === 'n') {
-    alert('he is taller in person trust me!');
-    askFive()
-  } else if(correctFive === 'yes' || correctFive === 'y') {
-    alert('fan forever!');
-  } else {
-    alert('last one and you still need help lol!');
-  }
-}
 
 
 

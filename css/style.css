@@ -6,6 +6,7 @@ body {
     background-color: rgb(89, 115,250);
     font-family: fantasy;
     font-size: 50px;
+    float: left;
     
     
 }
@@ -18,13 +19,60 @@ h1 {
 nav ul {
     background-color: rgb(200, 150, 0);
     padding: 50px;
+    float: left;
 }
 
 main {
     background-color: rgb(433, 50, 40);
     padding: 50px;
+    float: left;
 }
 li {
     padding: 2px;
+    float: left;
 }
 
+ol {
+    float: left;
+    background-color: rgb(200, 150, 0);
+}
+
+section {
+    background-color: rgb(89, 115,250);
+    font-size: 40px;
+    float: left;
+
+}
+
+.info1{
+    background-color: seagreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    float: left;
+}
+
+.info2 {
+    background-color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+}
+
+.info3 {
+    background-color: chartreuse;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+}
+
+.yup {
+    float: left;
+    background-color:goldenrod;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+    background-color: chocolate;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 30px;
+    float: left;
+}
