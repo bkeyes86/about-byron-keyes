@@ -9,7 +9,7 @@ function startGuessing() {
   //   var yourName = prompt('What is your name?');
   //   console.log(yourName);
   //   alert(yourName + ' How are you Buddy? ');
-  var userPoints = 0
+  var userPoints = 0;
   //   askOne();
   //   askTwo();
   //   askThree();
@@ -114,30 +114,31 @@ function startGuessing() {
 
 // function askSix() {
 
-//  
+//
 function askSix() {
-    for(var i = 0; i < 4; i++);
+    for(var i = 0; i < 4; i++){
     var question = prompt('what is my birth month by number 1 - 12?');
     var answer = Number(question);
-      
+
    if( answer > 10 ){
-   alert("Too High guess lower");
-   askSix();
+   alert('Too High guess lower');
+//    askSix();
    }
    else if(answer < 10){
-      alert("Too Low guess higher");
-       askSix();
+      alert('Too Low guess higher');
+    //    askSix();
    }
-   else if(answer === month){
-      alert("Octobers very Own");
-      break;
+   else if(answer === 10){
+      alert('Octobers very Own');
+    //   break;
    }
    else{
-      alert("Please enter Numbers only");
-      askSix();
+      alert('Please enter Numbers only');
+    //   askSix();
    }
+  }//closes for loop
+}//closes function
 
-  
     // eslint-disable-next-line no-undef
     // eslint-disable-next-line for-direction
 
@@ -153,31 +154,31 @@ function askSix() {
 
 
 
-function askSeven() {
-    var guesses = 0;
-    var foods['tacos', 'pizza', 'burgers', 'steak', 'ice cream '']
+// function askSeven() {
+    // var guesses = 0;
+    // var foods['tacos', 'pizza', 'burgers', 'steak', 'ice cream '']
 
-    while(guesses < 5){
-        var food2 = prompt('what are my favorite foods?')
-        var answer = food2.toLowerCase.trim();
-        var right = false;
+    // while(guesses < 5){
+    //     var food2 = prompt('what are my favorite foods?')
+    //     var answer = food2.toLowerCase.trim();
+    //     var right = false;
 
-        for(var i = 0; i < foods.length; i++) {
-            if(answer === foods[i]) {
-                alert('yum,' + foods[i] + 'do you like them too?')
-                right = true;
-                break;
-            } else {
-                console.log('wrong answer');
-            }
-        }
-        if(right === false) {
-            alert('yuck no way am I eating that!')
-        }
-        guesses +=1;
-    }
-    alert('I like to eat tacos, pizza, burgers, and steak')
-=======
+    //     for(var i = 0; i < foods.length; i++) {
+    //         if(answer === foods[i]) {
+    //             alert('yum,' + foods[i] + 'do you like them too?')
+    //             right = true;
+    //             break;
+    //         } else {
+    //             console.log('wrong answer');
+    //         }
+    //     }
+    //     if(right === false) {
+    //         alert('yuck no way am I eating that!')
+    //     }
+    //     guesses +=1;
+    // }
+    // alert('I like to eat tacos, pizza, burgers, and steak')
+
 
 
 
