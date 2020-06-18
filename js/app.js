@@ -111,31 +111,29 @@ function startGuessing() {
 //     alert('last one and you still need help lol!');
 //   }
 // }
-<<<<<<< HEAD
+
 // function askSix() {
 
 //  
 function askSix() {
-    for(var i = 0; i > 4;);
+    for(var i = 0; i < 4; i++);
     var question = prompt('what is my birth month by number 1 - 12?');
-  
     var answer = Number(question);
-    var month = 10;
-    var rounds = 4;
-  
-   if(answer > month){
-   alert("Too High");
+      
+   if( answer > 10 ){
+   alert("Too High guess lower");
    askSix();
    }
-   else if(answer < month){
-      alert("Too Low");
+   else if(answer < 10){
+      alert("Too Low guess higher");
        askSix();
    }
    else if(answer === month){
       alert("Octobers very Own");
+      break;
    }
    else{
-      alert("Please enter Numeric value only");
+      alert("Please enter Numbers only");
       askSix();
    }
 
@@ -157,58 +155,32 @@ function askSix() {
 
 function askSeven() {
     var guesses = 0;
-    var foods[tacos, pizza, burgers, steak]
+    var foods['tacos', 'pizza', 'burgers', 'steak', 'ice cream '']
 
-    while(guesses < 7){
+    while(guesses < 5){
         var food2 = prompt('what are my favorite foods?')
         var answer = food2.toLowerCase.trim();
-        var correct = false;
+        var right = false;
+
+        for(var i = 0; i < foods.length; i++) {
+            if(answer === foods[i]) {
+                alert('yum,' + foods[i] + 'do you like them too?')
+                right = true;
+                break;
+            } else {
+                console.log('wrong answer');
+            }
+        }
+        if(right === false) {
+            alert('yuck no way am I eating that!')
+        }
+        guesses +=1;
     }
+    alert('I like to eat tacos, pizza, burgers, and steak')
 =======
 
-function askSix() {
-    for(var i = 0; i < 4; i++) {
-        var questionSix = prompt('What is my birth month from 1-12?');
-        var answer = Number(questionSix);
 
-        if(answer < 10) {
-            alert('Too low, guess higher.');
-        } else if(answer > 10) {
-            alert('Too high, guess lower.');
-        } else if(answer === 10) {
-            alert('October\'s very own!');
-            break;
-        } else {
-            alert('Numbers only please.');
-        }
-    }
-}
 
-var guesses = 0;
-var foods = ['tacos', 'pizza', 'burgers', 'ice cream', 'steak'];
-
-while(guesses < 7) {
-    var foodQ = prompt('What are my favorite foods?');
-    var answer = foodQ.toLowerCase().trim();
-    var correct = false;
-
-    for(var i = 0; i < foods.length; i++) {
-        if(answer === foods[i]) {
-            alert('That\'s right, ' + foods[i] + ' are fantastic!');
-            correct = true;
-            break;
-        } else {
-            console.log('incorrect answer');
-        }
-    }
-    if(correct === false) {
-        alert('That\'s not right, I don\'t think I like that food.');
-    }
-    guesses += 1;
-}
-
-alert('My favorite foods are tacos, pizza, burgers, ice cream, and steak.');
->>>>>>> 259e480a4ce5e49fe2dfcc21ad221bc476fdc3cf
 
 
 
