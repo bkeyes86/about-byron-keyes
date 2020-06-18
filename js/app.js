@@ -16,7 +16,7 @@ function startGuessing() {
   //   askFour();
   //   askFive();
   askSix();
-  askSeven();
+//   askSeven();
 }
 
 // function askOne() {
@@ -111,6 +111,7 @@ function startGuessing() {
 //     alert('last one and you still need help lol!');
 //   }
 // }
+<<<<<<< HEAD
 // function askSix() {
 
 //  
@@ -163,8 +164,52 @@ function askSeven() {
         var answer = food2.toLowerCase.trim();
         var correct = false;
     }
+=======
 
+function askSix() {
+    for(var i = 0; i < 4; i++) {
+        var questionSix = prompt('What is my birth month from 1-12?');
+        var answer = Number(questionSix);
+
+        if(answer < 10) {
+            alert('Too low, guess higher.');
+        } else if(answer > 10) {
+            alert('Too high, guess lower.');
+        } else if(answer === 10) {
+            alert('October\'s very own!');
+            break;
+        } else {
+            alert('Numbers only please.');
+        }
+    }
 }
+
+var guesses = 0;
+var foods = ['tacos', 'pizza', 'burgers', 'ice cream', 'steak'];
+
+while(guesses < 7) {
+    var foodQ = prompt('What are my favorite foods?');
+    var answer = foodQ.toLowerCase().trim();
+    var correct = false;
+
+    for(var i = 0; i < foods.length; i++) {
+        if(answer === foods[i]) {
+            alert('That\'s right, ' + foods[i] + ' are fantastic!');
+            correct = true;
+            break;
+        } else {
+            console.log('incorrect answer');
+        }
+    }
+    if(correct === false) {
+        alert('That\'s not right, I don\'t think I like that food.');
+    }
+    guesses += 1;
+}
+
+alert('My favorite foods are tacos, pizza, burgers, ice cream, and steak.');
+>>>>>>> 259e480a4ce5e49fe2dfcc21ad221bc476fdc3cf
+
 
 
 // As a user, I would like to view a series of data related to the site owners interest so that the I can quickly view more information about them.
