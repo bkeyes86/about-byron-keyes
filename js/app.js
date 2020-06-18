@@ -9,6 +9,7 @@ function startGuessing() {
   //   var yourName = prompt('What is your name?');
   //   console.log(yourName);
   //   alert(yourName + ' How are you Buddy? ');
+  var userPoints = 0
   //   askOne();
   //   askTwo();
   //   askThree();
@@ -110,45 +111,58 @@ function startGuessing() {
 //     alert('last one and you still need help lol!');
 //   }
 // }
+// function askSix() {
+
+//  
 function askSix() {
-
-  var question = prompt('what is my birth month by number 1 - 12?');
-
-  var answer = Number(question);
-  var month = 10;
-  var rounds = 4;
-
-  if (answer > month) {
-   alert('nope lower ');
+    for(var i = 0; i > 4;);
+    var question = prompt('what is my birth month by number 1 - 12?');
+  
+    var answer = Number(question);
+    var month = 10;
+    var rounds = 4;
+  
+   if(answer > month){
+   alert("Too High");
    askSix();
-  } else if(answer < month) {
-      alert('nope higher');
+   }
+   else if(answer < month){
+      alert("Too Low");
+       askSix();
+   }
+   else if(answer === month){
+      alert("Octobers very Own");
+   }
+   else{
+      alert("Please enter Numeric value only");
       askSix();
-  } else if (answer === month) {
-      alert('octobers very own');
-  } else {
-      alert('answer needs a number');
-      askSix();
-  }
+   }
 
-  // eslint-disable-next-line no-undef
-  // eslint-disable-next-line for-direction
-  for(var i = 0; i > question; i++) {
-      alert('that is four try again it is 10!');
-      console.log('loop');
-  }
-//   var el = document.getElementById('correct');
-//   el.innerHTML = msg;
+  
+    // eslint-disable-next-line no-undef
+    // eslint-disable-next-line for-direction
 
-}
+
+
+
+
+
+
+
+
+
+
+
 
 function askSeven() {
-    var q2 = prompt('what are my favorite foods?');
+    var guesses = 0;
+    var foods[tacos, pizza, burgers, steak]
 
-    var [favoriteFoods];
-    foods = ['tacos', 'pizza', 'burgers', 'beets'];
-
-    foods.length;
+    while(guesses < 7){
+        var food2 = prompt('what are my favorite foods?')
+        var answer = food2.toLowerCase.trim();
+        var correct = false;
+    }
 
 }
 
