@@ -1,5 +1,6 @@
 # about-byron-keyes
 my about me 
+<<<<<<< HEAD
 # LAB - 02
 ## About Me website
 I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
@@ -11,5 +12,7 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 * Consider including the answers to your daily journal and submission questions here
 * This is also a good place to reflect on the tools and resources used and learned
 =======
+=======
+>>>>>>> d6c98baecec1f09f5865b46308762ef6ac1c5f92
 
 Driver: Nathan, Navigator: Byron

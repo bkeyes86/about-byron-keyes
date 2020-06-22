@@ -6,46 +6,47 @@ startGuessing();
 
 function startGuessing() {
 
-  //   var yourName = prompt('What is your name?');
-  //   console.log(yourName);
-  //   alert(yourName + ' How are you Buddy? ');
+    var yourName = prompt('What is your name?');
+    console.log(yourName);
+    alert(yourName + ' How are you Buddy? ');
   var userPoints = 0;
-  //   askOne();
-  //   askTwo();
-  //   askThree();
-  //   askFour();
-  //   askFive();
-  askSix();
-//   askSeven();
+    askOne();
+    askTwo();
+    askThree();
+    askFour();
+    askFive();
+    askSix();
+    askSeven();
 }
 
-// function askOne() {
-//   var guessOne = prompt('Do I have two brothers?');
+function askOne() {
+  var guessOne = prompt('Do I have two brothers?');
 
-//   var correctOne = guessOne.toLowerCase().trim();
+  var correctOne = guessOne.toLowerCase().trim();
 
-//   //   console.log(correctOne);
+  //   console.log(correctOne);
 
-//   if (correctOne === 'yes' || correctOne === 'y') {
-//     alert('you got it dude!');
-//   } else if(correctOne === 'no' || correctOne === 'n') {
-//     alert('Nah');
-//     alert('try again');
-//     askOne();
-//   } else {
-//     alert('only yes no y or n please and thank you!');
-//     askOne();
-//   }
+  if (correctOne === 'yes' || correctOne === 'y') {
+    alert('you got it dude!');
+  } else if(correctOne === 'no' || correctOne === 'n') {
+    alert('Nah');
+    alert('try again');
+    askOne();
+  } else {
+    alert('only yes no y or n please and thank you!');
+    askOne();
+  }
 
-// }
+}
 
-// function askTwo() {
-//   var guessTwo = prompt('Did I live in Alabama?');
+function askTwo() {
+  var guessTwo = prompt('Did I live in Alabama?');
 
-//   var correctTwo = guessTwo.toLocaleLowerCase().trim();
+  var correctTwo = guessTwo.toLocaleLowerCase().trim();
 
-//   //   console.log(correctTwo);
+  //   console.log(correctTwo);
 
+<<<<<<< HEAD
 //   if (correctTwo ==='yes' || correctTwo ==='y') {
 //     alert('no way but it was in the south Florida!');
 //     askTwo();
@@ -56,66 +57,75 @@ function startGuessing() {
 //     alert('still the same as the first question y , n , yes , no only!');
 //     askTwo();
 //   }
+=======
+  if (correctTwo ==='yes' || correctTwo ==='y') {
+    alert('no way but it was in the south Florida!');
+    askTwo();
+  } else if(correctTwo === 'no' || correctTwo === 'n') {
+    alert('it feels like you know me already!');
+  } else {
+    alert('still the same as the first question y , n , yes , no only!');
+    askTwo();
+  }
+>>>>>>> d6c98baecec1f09f5865b46308762ef6ac1c5f92
 
-// }
+}
 
-// function askThree() {
-//   var guessThree = prompt('The warriors are my favorite team?');
+function askThree() {
+  var guessThree = prompt('The warriors are my favorite team?');
 
-//   var correctThree = guessThree.toLowerCase().trim();
+  var correctThree = guessThree.toLowerCase().trim();
 
-//   //   console.log(correctThree);
+  //   console.log(correctThree);
 
-//   if (correctThree === 'yes' || correctThree ==='y') {
-//     alert('of course not c\'mon');
-//     askThree();
-//   } else if(correctThree === 'no' || correctThree === 'n') {
-//     alert('steph who?');
-//   } else {
-//     alert('things have not changed');
-//     askThree();
-//   }
+  if (correctThree === 'yes' || correctThree ==='y') {
+    alert('of course not c\'mon');
+    askThree();
+  } else if(correctThree === 'no' || correctThree === 'n') {
+    alert('steph who?');
+  } else {
+    alert('things have not changed');
+    askThree();
+  }
 
-// }
+}
 
-// function askFour() {
-//   var guessFour = prompt('I have 5 children');
+function askFour() {
+  var guessFour = prompt('I have 5 children');
 
-//   var correctFour = guessFour.toLowerCase().trim();
+  var correctFour = guessFour.toLowerCase().trim();
 
-//   //   console.log(correctFour);
+  //   console.log(correctFour);
 
-//   if (correctFour === 'yes' || correctFour === 'y') {
-//     alert('only two little angels lol');
-//     askFour();
-//   } else if(correctFour === 'no' || correctFour === 'n') {
-//     alert('Big Facts!');
-//   } else {
-//     alert('another reminder of y n yes or no is strange!');
-//     askFour();
-//   }
-// }
+  if (correctFour === 'yes' || correctFour === 'y') {
+    alert('only two little angels lol');
+    askFour();
+  } else if(correctFour === 'no' || correctFour === 'n') {
+    alert('Big Facts!');
+  } else {
+    alert('another reminder of y n yes or no is strange!');
+    askFour();
+  }
+}
 
-// function askFive() {
-//   var guessFive = prompt('I have met Snoop Dogg Twice!');
+function askFive() {
+  var guessFive = prompt('I have met Snoop Dogg Twice!');
 
-//   var correctFive = guessFive.toLowerCase().trim();
+  var correctFive = guessFive.toLowerCase().trim();
 
-//   //   console.log(correctFive);
+  //   console.log(correctFive);
 
-//   if (correctFive === 'no' || correctFive === 'n') {
-//     alert('he is taller in person trust me!');
-//     askFive();
-//   } else if(correctFive === 'yes' || correctFive === 'y') {
-//     alert('fan forever!');
-//   } else {
-//     alert('last one and you still need help lol!');
-//   }
-// }
+  if (correctFive === 'no' || correctFive === 'n') {
+    alert('he is taller in person trust me!');
+    askFive();
+  } else if(correctFive === 'yes' || correctFive === 'y') {
+    alert('fan forever!');
+  } else {
+    alert('last one and you still need help lol!');
+  }
+}
 
-// function askSix() {
 
-//
 function askSix() {
     for(var i = 0; i < 4; i++){
     var question = prompt('what is my birth month by number 1 - 12?');
@@ -131,11 +141,11 @@ function askSix() {
    }
    else if(answer === 10){
       alert('Octobers very Own');
-    //   break;
+      break;
    }
    else{
       alert('Please enter Numbers only');
-    //   askSix();
+      askSix();
    }
   }//closes for loop
 }//closes function
@@ -155,31 +165,36 @@ function askSix() {
 
 
 
-// function askSeven() {
-    // var guesses = 0;
-    // var foods['tacos', 'pizza', 'burgers', 'steak', 'ice cream '']
+function askSeven() {
+    var guesses = 0;
+    var foods = ['tacos', 'pizza', 'burgers', 'steak', 'ice cream'];
 
-    // while(guesses < 5){
-    //     var food2 = prompt('what are my favorite foods?')
-    //     var answer = food2.toLowerCase.trim();
-    //     var right = false;
+    while (guesses < 6) {
+        var food2 = prompt('what are my favorite foods?').toLowerCase().trim();
+        // var answer = food2;
+        var right = false;
+        if (!food2) {
+          break;
+        }
 
-    //     for(var i = 0; i < foods.length; i++) {
-    //         if(answer === foods[i]) {
-    //             alert('yum,' + foods[i] + 'do you like them too?')
-    //             right = true;
-    //             break;
-    //         } else {
-    //             console.log('wrong answer');
-    //         }
-    //     }
-    //     if(right === false) {
-    //         alert('yuck no way am I eating that!')
-    //     }
-    //     guesses +=1;
-    // }
-    // alert('I like to eat tacos, pizza, burgers, and steak')
-
+        for(var i = 0; i < foods.length; i++){
+            if(food2 === foods[i]) {
+                alert('yum, ' + foods[i] + ' do you like them too?');
+                right = true;
+                break;
+            } else {
+                console.log('wrong answer');
+            }
+        }
+        if(right === false) {
+            alert('yuck no way am I eating that!');
+        } else {
+          break;
+        }
+        guesses +=1;
+    }
+    alert('I like to eat tacos, pizza, burgers, and steak');
+  }
 
 
 
