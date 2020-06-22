@@ -58,6 +58,25 @@ function askTwo() {
     alert('still the same as the first question y , n , yes , no only!');
     askTwo();
   }
+function askThree() {
+  var guessThree = prompt('The warriors are my favorite team?');
+
+  var correctThree = guessThree.toLowerCase().trim();
+
+  //   console.log(correctThree);
+
+  if (correctThree === 'yes' || correctThree ==='y') {
+    alert('of course not c\'mon');
+    askThree();
+  } else if(correctThree === 'no' || correctThree === 'n') {
+    alert('steph who?');
+    userPoints +=1;
+  } else {
+    alert('things have not changed');
+    askThree();
+  }
+
+}
 
 function askFour() {
   var guessFour = prompt('I have 5 children');
@@ -143,7 +162,7 @@ function askSeven() {
 
     while (guesses < 6) {
         var food2 = prompt('what are my favorite foods?').toLowerCase().trim();
-        // var answer = food2;
+        / var answer = food2;
         var right = false;
         if (!food2) {
           break;
