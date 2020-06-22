@@ -51,6 +51,7 @@ function startGuessing() {
 //     askTwo();
 //   } else if(correctTwo === 'no' || correctTwo === 'n') {
 //     alert('it feels like you know me already!');
+      userPoints +=1;
 //   } else {
 //     alert('still the same as the first question y , n , yes , no only!');
 //     askTwo();
