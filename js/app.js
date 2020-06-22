@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable indent */
 'use strict';
 
@@ -28,6 +29,7 @@ function askOne() {
 
   if (correctOne === 'yes' || correctOne === 'y') {
     alert('you got it dude!');
+    userPoints +=1;
   } else if(correctOne === 'no' || correctOne === 'n') {
     alert('Nah');
     alert('try again');
@@ -44,51 +46,18 @@ function askTwo() {
 
   var correctTwo = guessTwo.toLocaleLowerCase().trim();
 
-  //   console.log(correctTwo);
+    console.log(correctTwo);
 
-<<<<<<< HEAD
-//   if (correctTwo ==='yes' || correctTwo ==='y') {
-//     alert('no way but it was in the south Florida!');
-//     askTwo();
-//   } else if(correctTwo === 'no' || correctTwo === 'n') {
-//     alert('it feels like you know me already!');
-      userPoints +=1;
-//   } else {
-//     alert('still the same as the first question y , n , yes , no only!');
-//     askTwo();
-//   }
-=======
   if (correctTwo ==='yes' || correctTwo ==='y') {
     alert('no way but it was in the south Florida!');
     askTwo();
   } else if(correctTwo === 'no' || correctTwo === 'n') {
     alert('it feels like you know me already!');
+      userPoints +=1;
   } else {
     alert('still the same as the first question y , n , yes , no only!');
     askTwo();
   }
->>>>>>> d6c98baecec1f09f5865b46308762ef6ac1c5f92
-
-}
-
-function askThree() {
-  var guessThree = prompt('The warriors are my favorite team?');
-
-  var correctThree = guessThree.toLowerCase().trim();
-
-  //   console.log(correctThree);
-
-  if (correctThree === 'yes' || correctThree ==='y') {
-    alert('of course not c\'mon');
-    askThree();
-  } else if(correctThree === 'no' || correctThree === 'n') {
-    alert('steph who?');
-  } else {
-    alert('things have not changed');
-    askThree();
-  }
-
-}
 
 function askFour() {
   var guessFour = prompt('I have 5 children');
@@ -102,6 +71,7 @@ function askFour() {
     askFour();
   } else if(correctFour === 'no' || correctFour === 'n') {
     alert('Big Facts!');
+    userPoints +=1;
   } else {
     alert('another reminder of y n yes or no is strange!');
     askFour();
@@ -120,6 +90,7 @@ function askFive() {
     askFive();
   } else if(correctFive === 'yes' || correctFive === 'y') {
     alert('fan forever!');
+    userPoints +=1;
   } else {
     alert('last one and you still need help lol!');
   }
@@ -141,6 +112,7 @@ function askSix() {
    }
    else if(answer === 10){
       alert('Octobers very Own');
+      userPoints +=1;
       break;
    }
    else{
@@ -181,6 +153,7 @@ function askSeven() {
             if(food2 === foods[i]) {
                 alert('yum, ' + foods[i] + ' do you like them too?');
                 right = true;
+                userPoints +=1;
                 break;
             } else {
                 console.log('wrong answer');
@@ -195,6 +168,8 @@ function askSeven() {
     }
     alert('I like to eat tacos, pizza, burgers, and steak');
   }
+
+}
 
 
 
