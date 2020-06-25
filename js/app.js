@@ -4,13 +4,15 @@
 
 console.log('This file is connected.');
 startGuessing();
+var userPoints = 0;
+
+
 
 function startGuessing() {
 
     var yourName = prompt('What is your name?');
     console.log(yourName);
     alert(yourName + ' How are you Buddy? ');
-  var userPoints = 0;
     askOne();
     askTwo();
     askThree();
@@ -58,6 +60,7 @@ function askTwo() {
     alert('still the same as the first question y , n , yes , no only!');
     askTwo();
   }
+}
 function askThree() {
   var guessThree = prompt('The warriors are my favorite team?');
 
@@ -162,7 +165,7 @@ function askSeven() {
 
     while (guesses < 6) {
         var food2 = prompt('what are my favorite foods?').toLowerCase().trim();
-        / var answer = food2;
+        // var answer = food2;
         var right = false;
         if (!food2) {
           break;
@@ -188,7 +191,7 @@ function askSeven() {
     alert('I like to eat tacos, pizza, burgers, and steak');
   }
 
-}
+
 
 
 
